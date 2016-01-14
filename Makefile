@@ -100,6 +100,7 @@ SOURCES_stable := \
 	Tests/test_tet3d.c \
 	Tests/test_tri2d.c \
 	Tests/test_ddcluster.c
+#	asyCompr/le1ir.c
 
 SOURCES_tests = $(SOURCES_stable) \
 
@@ -181,6 +182,7 @@ else
 endif
 
 $(PROGRAMS_tests) $(PROGRAMS_tools): libh2.a
+#$(PROGRAMS_tests) $(PROGRAMS_tools) asyCompr: libh2.a
 
 $(OBJECTS_tests): %.o: %.c
 ifdef BRIEF_OUTPUT
@@ -262,3 +264,58 @@ cleangcov:
 	$(RM) -rf Library/*.gcov Library/*.gcda Library/*.gcno \
 	Tests/*.gcov Tests/*.gcda Tests/*.gcno;
 	$(RM) -rf Coverage
+
+
+# ------------------------------------------------------------
+# asyCompr Test programs
+# ------------------------------------------------------------
+
+#SOURCES_sasyCompr := \
+#	Tests/test_amatrix.c \
+#	asyCompr/le1ir.c
+
+#SOURCES_asyCompr = $(SOURCES_sasyCompr) \
+
+#OBJECTS_asyCompr := \
+#	$(SOURCES_asyCompr:.c=.o)
+
+#DEPENDENCIES_asyCompr := \
+#	$(SOURCES_asyCompr:.c=.d)
+
+#PROGRAMS_asyCompr := \
+#	$(SOURCES_asyCompr:.c=)
+
+# --------------------------------------------------------
+# Asymptotic compression
+# --------------------------------------------------------
+
+#asyCompr: %: %.o
+#	$(CC) $(LDFLAGS) -Wl,-L,.,-R,. $< -o $@ -lh2 -lm $(LIBS) asyCompr/le1ir.c -ILibrary
+#asyCompr:
+#	$(CC) $(LDFLAGS) -lh2 -lm $(LIBS) asyCompr/le1ir.c -ILibrary Library/*.o
+#.PHONY: asyCompr
+
+#CPA = gcc -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -c
+CPA = -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -Wno-int-to-pointer-cast
+LIA = -lh2 -lm  -llapack -lblas -lgfortran -lcairo -lm
+
+asyCompr:
+	@gcc $(CPA) -c asyCompr/validation.c -Wno-unused-function
+#	@gcc $(CPA) -c asyCompr/tryCompr.c
+#	@gcc -Wl,-L,.,-R,. $(CPA) tryCompr.o validation.o $(LIA)
+#	@gcc $(CPA) -c asyCompr/tryCompr.c validation.o
+#	@gcc -Wl,-L,.,-R,. $(CPA) tryCompr.o $(LIA)
+	@gcc -Wl,-L,.,-R,. $(CPA) asyCompr/tryCompr.c $(LIA)
+#	$(CPA) asyCompr/validation.c -o asyCompr/validation.o#
+#	$(CPA) asyCompr/tryCompr.c -o asyCompr/tryCompr.o
+#	gcc  -Wl,-L,.,-R,. asyCompr/tryCompr.o asyCompr/validation.o -o tryCompr $(LIA)
+
+aOld:
+#	$(CPA) asyCompr/le1ir.c -o asyCompr/le1ir.o
+#	gcc  -Wl,-L,.,-R,. asyCompr/le1ir.o -o le1ir $(LIA)
+	gcc -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -c asyCompr/le1ir.c -o asyCompr/le1ir.o
+	gcc  -Wl,-L,.,-R,. asyCompr/le1ir.o -o le1ir -lh2 -lm  -llapack -lblas -lgfortran -lcairo -lm
+#	make clean
+.PHONY: asyCompr
+
+

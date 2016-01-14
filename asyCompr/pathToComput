@@ -1,0 +1,4 @@
+
+helmholtzbem3d.c: new_slp_helmholtz_bem3d sets bem (=bem_slp in tryCompr.c) -> nearfield to fill_slp_ll_near_helmholtzbem3d
+helmholtzbem3d.c: fill_slp_ll_near_helmholtzbem3d
+bem3d.c: assemble_ll_near_bem3d

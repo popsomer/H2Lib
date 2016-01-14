@@ -1,0 +1,283 @@
+Testing unit sphere with 512 triangles and 258 vertices
+----------------------------------------
+Testing outer Boundary integral equations:
+----------------------------------------
+
+Testing: cc exterior Hmatrix Interpolation row
+====================================
+
+rel. error V       : 1.34341e-05
+rel. error K+0.5*M : 1.76005e-05
+Solving Dirichlet problem:
+  Residual: 7.78361e-02	 Iterations: 0  Residual: 3.10963e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83442e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28224e-04	 Iterations: 5  Residual: 4.12891e-04	 Iterations: 6  Residual: 1.60663e-04	 Iterations: 7  Residual: 5.32993e-05	 Iterations: 8  Residual: 1.61808e-05	 Iterations: 9  Residual: 5.25656e-06	 Iterations: 10  Residual: 1.93483e-06	 Iterations: 11  Residual: 9.43397e-07	 Iterations: 12  Residual: 2.33779e-07	 Iterations: 13  Residual: 5.42396e-08	 Iterations: 14  Residual: 2.12542e-08	 Iterations: 15  Residual: 1.21414e-08	 Iterations: 16  Residual: 5.47530e-09	 Iterations: 17  Residual: 1.68933e-09	 Iterations: 18  Residual: 4.13712e-10	 Iterations: 19  Residual: 1.42629e-10	 Iterations: 20  Residual: 4.56916e-11	 Iterations: 21  Residual: 1.85973e-11	 Iterations: 22  Residual: 9.06696e-12	 Iterations: 23  Residual: 3.59173e-12	 Iterations: 24  Residual: 1.13307e-12	 Iterations: 25  Residual: 3.76365e-13	 Iterations: 26
+max. rel. error : 1.43523e-03           okay
+
+Testing: cc exterior Hmatrix Interpolation column
+====================================
+
+rel. error V       : 1.34324e-05
+rel. error K+0.5*M : 4.64356e-05
+Solving Dirichlet problem:
+  Residual: 7.78362e-02	 Iterations: 0  Residual: 3.10965e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83442e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28233e-04	 Iterations: 5  Residual: 4.12897e-04	 Iterations: 6  Residual: 1.60663e-04	 Iterations: 7  Residual: 5.32979e-05	 Iterations: 8  Residual: 1.61804e-05	 Iterations: 9  Residual: 5.25897e-06	 Iterations: 10  Residual: 1.95151e-06	 Iterations: 11  Residual: 9.51011e-07	 Iterations: 12  Residual: 2.33841e-07	 Iterations: 13  Residual: 5.42879e-08	 Iterations: 14  Residual: 2.13847e-08	 Iterations: 15  Residual: 1.23665e-08	 Iterations: 16  Residual: 5.52095e-09	 Iterations: 17  Residual: 1.69129e-09	 Iterations: 18  Residual: 4.13786e-10	 Iterations: 19  Residual: 1.42685e-10	 Iterations: 20  Residual: 4.57390e-11	 Iterations: 21  Residual: 1.86321e-11	 Iterations: 22  Residual: 9.08331e-12	 Iterations: 23  Residual: 3.59490e-12	 Iterations: 24  Residual: 1.13448e-12	 Iterations: 25  Residual: 3.77155e-13	 Iterations: 26
+max. rel. error : 1.43024e-03           okay
+
+Testing: cc exterior Hmatrix Interpolation mixed
+====================================
+
+rel. error V       : 1.34317e-05
+rel. error K+0.5*M : 4.64357e-05
+Solving Dirichlet problem:
+  Residual: 7.78362e-02	 Iterations: 0  Residual: 3.10965e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83442e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28233e-04	 Iterations: 5  Residual: 4.12897e-04	 Iterations: 6  Residual: 1.60663e-04	 Iterations: 7  Residual: 5.32979e-05	 Iterations: 8  Residual: 1.61804e-05	 Iterations: 9  Residual: 5.25897e-06	 Iterations: 10  Residual: 1.95151e-06	 Iterations: 11  Residual: 9.51011e-07	 Iterations: 12  Residual: 2.33841e-07	 Iterations: 13  Residual: 5.42879e-08	 Iterations: 14  Residual: 2.13847e-08	 Iterations: 15  Residual: 1.23665e-08	 Iterations: 16  Residual: 5.52095e-09	 Iterations: 17  Residual: 1.69129e-09	 Iterations: 18  Residual: 4.13786e-10	 Iterations: 19  Residual: 1.42685e-10	 Iterations: 20  Residual: 4.57390e-11	 Iterations: 21  Residual: 1.86321e-11	 Iterations: 22  Residual: 9.08331e-12	 Iterations: 23  Residual: 3.59490e-12	 Iterations: 24  Residual: 1.13448e-12	 Iterations: 25  Residual: 3.77155e-13	 Iterations: 26
+max. rel. error : 1.43024e-03           okay
+
+Testing: cc exterior Hmatrix Green row
+====================================
+
+rel. error V       : 2.03450e-04
+rel. error K+0.5*M : 2.03383e-04
+Solving Dirichlet problem:
+  Residual: 7.78337e-02	 Iterations: 0  Residual: 3.10958e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83450e-03	 Iterations: 3  Residual: 2.03911e-03	 Iterations: 4  Residual: 9.28196e-04	 Iterations: 5  Residual: 4.12864e-04	 Iterations: 6  Residual: 1.60643e-04	 Iterations: 7  Residual: 5.32960e-05	 Iterations: 8  Residual: 1.61829e-05	 Iterations: 9  Residual: 5.26623e-06	 Iterations: 10  Residual: 1.99205e-06	 Iterations: 11  Residual: 9.67279e-07	 Iterations: 12  Residual: 2.34040e-07	 Iterations: 13  Residual: 5.44218e-08	 Iterations: 14  Residual: 2.17158e-08	 Iterations: 15  Residual: 1.28331e-08	 Iterations: 16  Residual: 5.60206e-09	 Iterations: 17  Residual: 1.69429e-09	 Iterations: 18  Residual: 4.13791e-10	 Iterations: 19  Residual: 1.42620e-10	 Iterations: 20  Residual: 4.56891e-11	 Iterations: 21  Residual: 1.86033e-11	 Iterations: 22  Residual: 9.07330e-12	 Iterations: 23  Residual: 3.60378e-12	 Iterations: 24  Residual: 1.14430e-12	 Iterations: 25  Residual: 3.80224e-13	 Iterations: 26
+max. rel. error : 1.44265e-03           okay
+
+Testing: cc exterior Hmatrix Green column
+====================================
+
+rel. error V       : 2.03438e-04
+rel. error K+0.5*M : 9.06375e-04
+Solving Dirichlet problem:
+  Residual: 7.78451e-02	 Iterations: 0  Residual: 3.10980e-02	 Iterations: 1  Residual: 1.20589e-02	 Iterations: 2  Residual: 4.83412e-03	 Iterations: 3  Residual: 2.03857e-03	 Iterations: 4  Residual: 9.27893e-04	 Iterations: 5  Residual: 4.12934e-04	 Iterations: 6  Residual: 1.60731e-04	 Iterations: 7  Residual: 5.33168e-05	 Iterations: 8  Residual: 1.61735e-05	 Iterations: 9  Residual: 5.22040e-06	 Iterations: 10  Residual: 1.67728e-06	 Iterations: 11  Residual: 5.98941e-07	 Iterations: 12  Residual: 2.25339e-07	 Iterations: 13  Residual: 5.48308e-08	 Iterations: 14  Residual: 2.28148e-08	 Iterations: 15  Residual: 1.37521e-08	 Iterations: 16  Residual: 5.71410e-09	 Iterations: 17  Residual: 1.69806e-09	 Iterations: 18  Residual: 4.13247e-10	 Iterations: 19  Residual: 1.42570e-10	 Iterations: 20  Residual: 4.59001e-11	 Iterations: 21  Residual: 1.87883e-11	 Iterations: 22  Residual: 9.16468e-12	 Iterations: 23  Residual: 3.65772e-12	 Iterations: 24  Residual: 1.19116e-12	 Iterations: 25  Residual: 3.98053e-13	 Iterations: 26
+max. rel. error : 1.34592e-03           okay
+
+Testing: cc exterior Hmatrix Green mixed
+====================================
+
+rel. error V       : 2.03463e-04
+rel. error K+0.5*M : 9.06374e-04
+Solving Dirichlet problem:
+  Residual: 7.78451e-02	 Iterations: 0  Residual: 3.10980e-02	 Iterations: 1  Residual: 1.20589e-02	 Iterations: 2  Residual: 4.83412e-03	 Iterations: 3  Residual: 2.03857e-03	 Iterations: 4  Residual: 9.27893e-04	 Iterations: 5  Residual: 4.12934e-04	 Iterations: 6  Residual: 1.60731e-04	 Iterations: 7  Residual: 5.33168e-05	 Iterations: 8  Residual: 1.61735e-05	 Iterations: 9  Residual: 5.22040e-06	 Iterations: 10  Residual: 1.67728e-06	 Iterations: 11  Residual: 5.98941e-07	 Iterations: 12  Residual: 2.25339e-07	 Iterations: 13  Residual: 5.48308e-08	 Iterations: 14  Residual: 2.28148e-08	 Iterations: 15  Residual: 1.37521e-08	 Iterations: 16  Residual: 5.71410e-09	 Iterations: 17  Residual: 1.69806e-09	 Iterations: 18  Residual: 4.13247e-10	 Iterations: 19  Residual: 1.42570e-10	 Iterations: 20  Residual: 4.59001e-11	 Iterations: 21  Residual: 1.87883e-11	 Iterations: 22  Residual: 9.16468e-12	 Iterations: 23  Residual: 3.65772e-12	 Iterations: 24  Residual: 1.19116e-12	 Iterations: 25  Residual: 3.98053e-13	 Iterations: 26
+max. rel. error : 1.34592e-03           okay
+
+Testing: cc exterior Hmatrix Greenhybrid row
+====================================
+
+rel. error V       : 2.10154e-04
+rel. error K+0.5*M : 1.86382e-04
+Solving Dirichlet problem:
+  Residual: 7.78358e-02	 Iterations: 0  Residual: 3.10960e-02	 Iterations: 1  Residual: 1.20583e-02	 Iterations: 2  Residual: 4.83448e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28244e-04	 Iterations: 5  Residual: 4.12907e-04	 Iterations: 6  Residual: 1.60672e-04	 Iterations: 7  Residual: 5.33016e-05	 Iterations: 8  Residual: 1.61804e-05	 Iterations: 9  Residual: 5.25989e-06	 Iterations: 10  Residual: 1.96066e-06	 Iterations: 11  Residual: 9.54965e-07	 Iterations: 12  Residual: 2.33886e-07	 Iterations: 13  Residual: 5.43385e-08	 Iterations: 14  Residual: 2.15227e-08	 Iterations: 15  Residual: 1.25789e-08	 Iterations: 16  Residual: 5.55922e-09	 Iterations: 17  Residual: 1.69239e-09	 Iterations: 18  Residual: 4.13732e-10	 Iterations: 19  Residual: 1.42604e-10	 Iterations: 20  Residual: 4.56403e-11	 Iterations: 21  Residual: 1.85550e-11	 Iterations: 22  Residual: 9.04468e-12	 Iterations: 23  Residual: 3.58660e-12	 Iterations: 24  Residual: 1.13241e-12	 Iterations: 25  Residual: 3.76429e-13	 Iterations: 26
+max. rel. error : 1.43312e-03           okay
+
+Testing: cc exterior Hmatrix Greenhybrid column
+====================================
+
+rel. error V       : 2.10169e-04
+rel. error K+0.5*M : 4.65566e-05
+Solving Dirichlet problem:
+  Residual: 7.78365e-02	 Iterations: 0  Residual: 3.10968e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83441e-03	 Iterations: 3  Residual: 2.03899e-03	 Iterations: 4  Residual: 9.28108e-04	 Iterations: 5  Residual: 4.12871e-04	 Iterations: 6  Residual: 1.60678e-04	 Iterations: 7  Residual: 5.33123e-05	 Iterations: 8  Residual: 1.61825e-05	 Iterations: 9  Residual: 5.25021e-06	 Iterations: 10  Residual: 1.89389e-06	 Iterations: 11  Residual: 9.21727e-07	 Iterations: 12  Residual: 2.33539e-07	 Iterations: 13  Residual: 5.41296e-08	 Iterations: 14  Residual: 2.09709e-08	 Iterations: 15  Residual: 1.15214e-08	 Iterations: 16  Residual: 5.31520e-09	 Iterations: 17  Residual: 1.68197e-09	 Iterations: 18  Residual: 4.13819e-10	 Iterations: 19  Residual: 1.42630e-10	 Iterations: 20  Residual: 4.56919e-11	 Iterations: 21  Residual: 1.86154e-11	 Iterations: 22  Residual: 9.07493e-12	 Iterations: 23  Residual: 3.59141e-12	 Iterations: 24  Residual: 1.13296e-12	 Iterations: 25  Residual: 3.76380e-13	 Iterations: 26
+max. rel. error : 1.42231e-03           okay
+
+Testing: cc exterior Hmatrix Greenhybrid mixed
+====================================
+
+rel. error V       : 2.10155e-04
+rel. error K+0.5*M : 1.86382e-04
+Solving Dirichlet problem:
+  Residual: 7.78358e-02	 Iterations: 0  Residual: 3.10960e-02	 Iterations: 1  Residual: 1.20583e-02	 Iterations: 2  Residual: 4.83448e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28244e-04	 Iterations: 5  Residual: 4.12907e-04	 Iterations: 6  Residual: 1.60672e-04	 Iterations: 7  Residual: 5.33016e-05	 Iterations: 8  Residual: 1.61804e-05	 Iterations: 9  Residual: 5.25989e-06	 Iterations: 10  Residual: 1.96066e-06	 Iterations: 11  Residual: 9.54965e-07	 Iterations: 12  Residual: 2.33886e-07	 Iterations: 13  Residual: 5.43385e-08	 Iterations: 14  Residual: 2.15227e-08	 Iterations: 15  Residual: 1.25789e-08	 Iterations: 16  Residual: 5.55922e-09	 Iterations: 17  Residual: 1.69239e-09	 Iterations: 18  Residual: 4.13732e-10	 Iterations: 19  Residual: 1.42604e-10	 Iterations: 20  Residual: 4.56403e-11	 Iterations: 21  Residual: 1.85550e-11	 Iterations: 22  Residual: 9.04468e-12	 Iterations: 23  Residual: 3.58660e-12	 Iterations: 24  Residual: 1.13241e-12	 Iterations: 25  Residual: 3.76429e-13	 Iterations: 26
+max. rel. error : 1.43312e-03           okay
+
+Testing: cc exterior Hmatrix ACA full pivoting
+====================================
+
+rel. error V       : 3.88105e-04
+rel. error K+0.5*M : 3.25134e-04
+Solving Dirichlet problem:
+  Residual: 7.78360e-02	 Iterations: 0  Residual: 3.10963e-02	 Iterations: 1  Residual: 1.20584e-02	 Iterations: 2  Residual: 4.83440e-03	 Iterations: 3  Residual: 2.03914e-03	 Iterations: 4  Residual: 9.28220e-04	 Iterations: 5  Residual: 4.12891e-04	 Iterations: 6  Residual: 1.60664e-04	 Iterations: 7  Residual: 5.33003e-05	 Iterations: 8  Residual: 1.61812e-05	 Iterations: 9  Residual: 5.25847e-06	 Iterations: 10  Residual: 1.94761e-06	 Iterations: 11  Residual: 9.49300e-07	 Iterations: 12  Residual: 2.33843e-07	 Iterations: 13  Residual: 5.42915e-08	 Iterations: 14  Residual: 2.13814e-08	 Iterations: 15  Residual: 1.23589e-08	 Iterations: 16  Residual: 5.51919e-09	 Iterations: 17  Residual: 1.69104e-09	 Iterations: 18  Residual: 4.13860e-10	 Iterations: 19  Residual: 1.42679e-10	 Iterations: 20  Residual: 4.57315e-11	 Iterations: 21  Residual: 1.86325e-11	 Iterations: 22  Residual: 9.08566e-12	 Iterations: 23  Residual: 3.59597e-12	 Iterations: 24  Residual: 1.13369e-12	 Iterations: 25  Residual: 3.76648e-13	 Iterations: 26
+max. rel. error : 1.43466e-03           okay
+
+Testing: cc exterior Hmatrix ACA partial pivoting
+====================================
+
+rel. error V       : 5.73123e-04
+rel. error K+0.5*M : 3.25134e-04
+Solving Dirichlet problem:
+  Residual: 7.78353e-02	 Iterations: 0  Residual: 3.10961e-02	 Iterations: 1  Residual: 1.20583e-02	 Iterations: 2  Residual: 4.83442e-03	 Iterations: 3  Residual: 2.03912e-03	 Iterations: 4  Residual: 9.28197e-04	 Iterations: 5  Residual: 4.12891e-04	 Iterations: 6  Residual: 1.60673e-04	 Iterations: 7  Residual: 5.33060e-05	 Iterations: 8  Residual: 1.61845e-05	 Iterations: 9  Residual: 5.27021e-06	 Iterations: 10  Residual: 2.01868e-06	 Iterations: 11  Residual: 9.76497e-07	 Iterations: 12  Residual: 2.34117e-07	 Iterations: 13  Residual: 5.44197e-08	 Iterations: 14  Residual: 2.16540e-08	 Iterations: 15  Residual: 1.27351e-08	 Iterations: 16  Residual: 5.58475e-09	 Iterations: 17  Residual: 1.69432e-09	 Iterations: 18  Residual: 4.15858e-10	 Iterations: 19  Residual: 1.46262e-10	 Iterations: 20  Residual: 5.21778e-11	 Iterations: 21  Residual: 2.30498e-11	 Iterations: 22  Residual: 1.11937e-11	 Iterations: 23  Residual: 5.90625e-12	 Iterations: 24  Residual: 2.56687e-12	 Iterations: 25  Residual: 8.91145e-13	 Iterations: 26
+max. rel. error : 1.44219e-03           okay
+
+Testing: cc exterior Hmatrix HCA2
+====================================
+
+rel. error V       : 1.09604e-04
+rel. error K+0.5*M : 3.25133e-04
+Solving Dirichlet problem:
+  Residual: 7.78329e-02	 Iterations: 0  Residual: 3.10946e-02	 Iterations: 1  Residual: 1.20578e-02	 Iterations: 2  Residual: 4.83413e-03	 Iterations: 3  Residual: 2.03897e-03	 Iterations: 4  Residual: 9.28164e-04	 Iterations: 5  Residual: 4.12879e-04	 Iterations: 6  Residual: 1.60663e-04	 Iterations: 7  Residual: 5.32962e-05	 Iterations: 8  Residual: 1.61795e-05	 Iterations: 9  Residual: 5.25771e-06	 Iterations: 10  Residual: 1.94499e-06	 Iterations: 11  Residual: 9.48059e-07	 Iterations: 12  Residual: 2.33862e-07	 Iterations: 13  Residual: 5.45770e-08	 Iterations: 14  Residual: 2.20703e-08	 Iterations: 15  Residual: 1.32022e-08	 Iterations: 16  Residual: 5.65153e-09	 Iterations: 17  Residual: 1.69545e-09	 Iterations: 18  Residual: 4.14220e-10	 Iterations: 19  Residual: 1.42742e-10	 Iterations: 20  Residual: 4.57782e-11	 Iterations: 21  Residual: 1.86968e-11	 Iterations: 22  Residual: 9.13412e-12	 Iterations: 23  Residual: 3.63514e-12	 Iterations: 24  Residual: 1.25564e-12	 Iterations: 25  Residual: 5.82320e-13	 Iterations: 26
+max. rel. error : 1.47493e-03           okay
+
+Testing: cc exterior H2matrix Interpolation
+====================================
+
+rel. error V       : 5.84239e-07
+rel. error K-0.5*M : 3.83227e-06
+Solving Dirichlet problem:
+  Residual: 7.78360e-02	 Iterations: 0  Residual: 3.10964e-02	 Iterations: 1  Residual: 1.20585e-02	 Iterations: 2  Residual: 4.83443e-03	 Iterations: 3  Residual: 2.03915e-03	 Iterations: 4  Residual: 9.28225e-04	 Iterations: 5  Residual: 4.12894e-04	 Iterations: 6  Residual: 1.60664e-04	 Iterations: 7  Residual: 5.32994e-05	 Iterations: 8  Residual: 1.61810e-05	 Iterations: 9  Residual: 5.25835e-06	 Iterations: 10  Residual: 1.94669e-06	 Iterations: 11  Residual: 9.48882e-07	 Iterations: 12  Residual: 2.33833e-07	 Iterations: 13  Residual: 5.42791e-08	 Iterations: 14  Residual: 2.13586e-08	 Iterations: 15  Residual: 1.23250e-08	 Iterations: 16  Residual: 5.51287e-09	 Iterations: 17  Residual: 1.69079e-09	 Iterations: 18  Residual: 4.13733e-10	 Iterations: 19  Residual: 1.42632e-10	 Iterations: 20  Residual: 4.56927e-11	 Iterations: 21  Residual: 1.85982e-11	 Iterations: 22  Residual: 9.06729e-12	 Iterations: 23  Residual: 3.59117e-12	 Iterations: 24  Residual: 1.13275e-12	 Iterations: 25  Residual: 3.76350e-13	 Iterations: 26
+max. rel. error : 1.43509e-03           okay
+
+Testing: cc exterior H2matrix Greenhybrid
+====================================
+
+rel. error V       : 2.16025e-04
+rel. error K-0.5*M : 1.86439e-04
+Solving Dirichlet problem:
+  Residual: 7.78362e-02	 Iterations: 0  Residual: 3.10965e-02	 Iterations: 1  Residual: 1.20583e-02	 Iterations: 2  Residual: 4.83446e-03	 Iterations: 3  Residual: 2.03898e-03	 Iterations: 4  Residual: 9.28124e-04	 Iterations: 5  Residual: 4.12884e-04	 Iterations: 6  Residual: 1.60686e-04	 Iterations: 7  Residual: 5.33145e-05	 Iterations: 8  Residual: 1.61817e-05	 Iterations: 9  Residual: 5.25140e-06	 Iterations: 10  Residual: 1.90653e-06	 Iterations: 11  Residual: 9.28953e-07	 Iterations: 12  Residual: 2.33602e-07	 Iterations: 13  Residual: 5.41613e-08	 Iterations: 14  Residual: 2.10700e-08	 Iterations: 15  Residual: 1.17602e-08	 Iterations: 16  Residual: 5.38292e-09	 Iterations: 17  Residual: 1.68476e-09	 Iterations: 18  Residual: 4.13833e-10	 Iterations: 19  Residual: 1.42603e-10	 Iterations: 20  Residual: 4.56367e-11	 Iterations: 21  Residual: 1.85692e-11	 Iterations: 22  Residual: 9.05056e-12	 Iterations: 23  Residual: 3.58644e-12	 Iterations: 24  Residual: 1.13241e-12	 Iterations: 25  Residual: 3.76358e-13	 Iterations: 26
+max. rel. error : 1.42054e-03           okay
+
+Testing: cc exterior H2matrix Greenhybrid ortho
+====================================
+
+rel. error V       : 2.53885e-04
+rel. error K-0.5*M : 1.86707e-04
+Solving Dirichlet problem:
+  Residual: 7.78363e-02	 Iterations: 0  Residual: 3.10973e-02	 Iterations: 1  Residual: 1.20586e-02	 Iterations: 2  Residual: 4.83466e-03	 Iterations: 3  Residual: 2.03913e-03	 Iterations: 4  Residual: 9.28158e-04	 Iterations: 5  Residual: 4.12872e-04	 Iterations: 6  Residual: 1.60684e-04	 Iterations: 7  Residual: 5.33206e-05	 Iterations: 8  Residual: 1.61857e-05	 Iterations: 9  Residual: 5.25080e-06	 Iterations: 10  Residual: 1.89656e-06	 Iterations: 11  Residual: 9.23356e-07	 Iterations: 12  Residual: 2.33632e-07	 Iterations: 13  Residual: 5.41467e-08	 Iterations: 14  Residual: 2.09806e-08	 Iterations: 15  Residual: 1.15471e-08	 Iterations: 16  Residual: 5.32424e-09	 Iterations: 17  Residual: 1.68252e-09	 Iterations: 18  Residual: 4.13805e-10	 Iterations: 19  Residual: 1.42572e-10	 Iterations: 20  Residual: 4.56025e-11	 Iterations: 21  Residual: 1.85438e-11	 Iterations: 22  Residual: 9.03983e-12	 Iterations: 23  Residual: 3.58454e-12	 Iterations: 24  Residual: 1.13309e-12	 Iterations: 25  Residual: 3.76837e-13	 Iterations: 26
+max. rel. error : 1.41299e-03           okay
+
+----------------------------------------
+Testing outer Boundary integral equations:
+----------------------------------------
+
+Testing: ll exterior Hmatrix Interpolation row
+====================================
+
+rel. error V       : 5.06890e-05
+rel. error K+0.5*M : 4.90242e-05
+Solving Dirichlet problem:
+  Residual: 9.71960e-02	 Iterations: 0  Residual: 4.03648e-02	 Iterations: 1  Residual: 1.19981e-02	 Iterations: 2  Residual: 5.29263e-03	 Iterations: 3  Residual: 2.51885e-03	 Iterations: 4  Residual: 1.49206e-03	 Iterations: 5  Residual: 9.60115e-04	 Iterations: 6  Residual: 5.79149e-04	 Iterations: 7  Residual: 3.08187e-04	 Iterations: 8  Residual: 2.16873e-04	 Iterations: 9  Residual: 1.09928e-04	 Iterations: 10  Residual: 7.15783e-05	 Iterations: 11  Residual: 3.33138e-05	 Iterations: 12  Residual: 1.35540e-05	 Iterations: 13  Residual: 6.27403e-06	 Iterations: 14  Residual: 2.99704e-06	 Iterations: 15  Residual: 1.39609e-06	 Iterations: 16  Residual: 7.43235e-07	 Iterations: 17  Residual: 4.80129e-07	 Iterations: 18  Residual: 3.85584e-07	 Iterations: 19  Residual: 2.95044e-07	 Iterations: 20  Residual: 1.56290e-07	 Iterations: 21  Residual: 7.93950e-08	 Iterations: 22  Residual: 3.46780e-08	 Iterations: 23  Residual: 2.14534e-08	 Iterations: 24  Residual: 1.13634e-08	 Iterations: 25  Residual: 6.27909e-09	 Iterations: 26  Residual: 2.84189e-09	 Iterations: 27  Residual: 1.05616e-09	 Iterations: 28  Residual: 5.58269e-10	 Iterations: 29  Residual: 2.80143e-10	 Iterations: 30  Residual: 1.65280e-10	 Iterations: 31  Residual: 7.99819e-11	 Iterations: 32  Residual: 4.48718e-11	 Iterations: 33  Residual: 2.85114e-11	 Iterations: 34  Residual: 1.81611e-11	 Iterations: 35  Residual: 1.12312e-11	 Iterations: 36  Residual: 5.88721e-12	 Iterations: 37  Residual: 2.70663e-12	 Iterations: 38  Residual: 1.04829e-12	 Iterations: 39  Residual: 3.91376e-13	 Iterations: 40
+max. rel. error : 2.56984e-04           okay
+
+Testing: ll exterior Hmatrix Interpolation column
+====================================
+
+rel. error V       : 5.06931e-05
+rel. error K+0.5*M : 2.65076e-04
+Solving Dirichlet problem:
+  Residual: 9.71968e-02	 Iterations: 0  Residual: 4.03656e-02	 Iterations: 1  Residual: 1.19988e-02	 Iterations: 2  Residual: 5.29289e-03	 Iterations: 3  Residual: 2.51886e-03	 Iterations: 4  Residual: 1.49212e-03	 Iterations: 5  Residual: 9.60115e-04	 Iterations: 6  Residual: 5.79400e-04	 Iterations: 7  Residual: 3.19655e-04	 Iterations: 8  Residual: 2.26891e-04	 Iterations: 9  Residual: 1.18903e-04	 Iterations: 10  Residual: 7.29700e-05	 Iterations: 11  Residual: 3.33300e-05	 Iterations: 12  Residual: 1.37814e-05	 Iterations: 13  Residual: 6.39195e-06	 Iterations: 14  Residual: 3.02726e-06	 Iterations: 15  Residual: 1.41241e-06	 Iterations: 16  Residual: 7.45645e-07	 Iterations: 17  Residual: 4.74504e-07	 Iterations: 18  Residual: 3.67731e-07	 Iterations: 19  Residual: 2.86640e-07	 Iterations: 20  Residual: 1.56449e-07	 Iterations: 21  Residual: 7.97385e-08	 Iterations: 22  Residual: 3.53305e-08	 Iterations: 23  Residual: 2.16551e-08	 Iterations: 24  Residual: 1.13579e-08	 Iterations: 25  Residual: 6.27479e-09	 Iterations: 26  Residual: 2.84114e-09	 Iterations: 27  Residual: 1.05731e-09	 Iterations: 28  Residual: 5.60706e-10	 Iterations: 29  Residual: 2.89157e-10	 Iterations: 30  Residual: 1.67222e-10	 Iterations: 31  Residual: 8.11484e-11	 Iterations: 32  Residual: 4.55675e-11	 Iterations: 33  Residual: 2.87635e-11	 Iterations: 34  Residual: 1.81867e-11	 Iterations: 35  Residual: 1.12845e-11	 Iterations: 36  Residual: 6.02712e-12	 Iterations: 37  Residual: 2.74724e-12	 Iterations: 38  Residual: 1.04931e-12	 Iterations: 39  Residual: 3.91006e-13	 Iterations: 40
+max. rel. error : 2.83416e-04           okay
+
+Testing: ll exterior Hmatrix Interpolation mixed
+====================================
+
+rel. error V       : 2.20141e-05
+rel. error K+0.5*M : 5.98485e-05
+Solving Dirichlet problem:
+  Residual: 9.71976e-02	 Iterations: 0  Residual: 4.03655e-02	 Iterations: 1  Residual: 1.19984e-02	 Iterations: 2  Residual: 5.29273e-03	 Iterations: 3  Residual: 2.51888e-03	 Iterations: 4  Residual: 1.49206e-03	 Iterations: 5  Residual: 9.60085e-04	 Iterations: 6  Residual: 5.79039e-04	 Iterations: 7  Residual: 3.06647e-04	 Iterations: 8  Residual: 2.18475e-04	 Iterations: 9  Residual: 1.12446e-04	 Iterations: 10  Residual: 7.17556e-05	 Iterations: 11  Residual: 3.33224e-05	 Iterations: 12  Residual: 1.36990e-05	 Iterations: 13  Residual: 6.35324e-06	 Iterations: 14  Residual: 3.01849e-06	 Iterations: 15  Residual: 1.41149e-06	 Iterations: 16  Residual: 7.64631e-07	 Iterations: 17  Residual: 5.28926e-07	 Iterations: 18  Residual: 4.09927e-07	 Iterations: 19  Residual: 2.99521e-07	 Iterations: 20  Residual: 1.56480e-07	 Iterations: 21  Residual: 7.86168e-08	 Iterations: 22  Residual: 3.21129e-08	 Iterations: 23  Residual: 2.02757e-08	 Iterations: 24  Residual: 1.13362e-08	 Iterations: 25  Residual: 6.27976e-09	 Iterations: 26  Residual: 2.84291e-09	 Iterations: 27  Residual: 1.05686e-09	 Iterations: 28  Residual: 5.58929e-10	 Iterations: 29  Residual: 2.79955e-10	 Iterations: 30  Residual: 1.65619e-10	 Iterations: 31  Residual: 8.10864e-11	 Iterations: 32  Residual: 4.56126e-11	 Iterations: 33  Residual: 2.87814e-11	 Iterations: 34  Residual: 1.81745e-11	 Iterations: 35  Residual: 1.12766e-11	 Iterations: 36  Residual: 6.03288e-12	 Iterations: 37  Residual: 2.75094e-12	 Iterations: 38  Residual: 1.05084e-12	 Iterations: 39  Residual: 3.91427e-13	 Iterations: 40
+max. rel. error : 2.57640e-04           okay
+
+Testing: ll exterior Hmatrix Green row
+====================================
+
+rel. error V       : 1.23535e-04
+rel. error K+0.5*M : 2.65257e-04
+Solving Dirichlet problem:
+  Residual: 9.71896e-02	 Iterations: 0  Residual: 4.03637e-02	 Iterations: 1  Residual: 1.19976e-02	 Iterations: 2  Residual: 5.29241e-03	 Iterations: 3  Residual: 2.51889e-03	 Iterations: 4  Residual: 1.49204e-03	 Iterations: 5  Residual: 9.60204e-04	 Iterations: 6  Residual: 5.82117e-04	 Iterations: 7  Residual: 3.87303e-04	 Iterations: 8  Residual: 2.37796e-04	 Iterations: 9  Residual: 1.28014e-04	 Iterations: 10  Residual: 7.40957e-05	 Iterations: 11  Residual: 3.33104e-05	 Iterations: 12  Residual: 1.33301e-05	 Iterations: 13  Residual: 6.13353e-06	 Iterations: 14  Residual: 2.97420e-06	 Iterations: 15  Residual: 1.52246e-06	 Iterations: 16  Residual: 9.44423e-07	 Iterations: 17  Residual: 5.77782e-07	 Iterations: 18  Residual: 4.11532e-07	 Iterations: 19  Residual: 2.98625e-07	 Iterations: 20  Residual: 1.56996e-07	 Iterations: 21  Residual: 8.52461e-08	 Iterations: 22  Residual: 4.25011e-08	 Iterations: 23  Residual: 2.23509e-08	 Iterations: 24  Residual: 1.13743e-08	 Iterations: 25  Residual: 6.28173e-09	 Iterations: 26  Residual: 2.84322e-09	 Iterations: 27  Residual: 1.05576e-09	 Iterations: 28  Residual: 5.53947e-10	 Iterations: 29  Residual: 2.29287e-10	 Iterations: 30  Residual: 1.24261e-10	 Iterations: 31  Residual: 7.72846e-11	 Iterations: 32  Residual: 4.59983e-11	 Iterations: 33  Residual: 2.88924e-11	 Iterations: 34  Residual: 1.81728e-11	 Iterations: 35  Residual: 1.13185e-11	 Iterations: 36  Residual: 6.09277e-12	 Iterations: 37  Residual: 2.75212e-12	 Iterations: 38  Residual: 1.05018e-12	 Iterations: 39  Residual: 3.91594e-13	 Iterations: 40
+max. rel. error : 2.58511e-04           okay
+
+Testing: ll exterior Hmatrix Green column
+====================================
+
+rel. error V       : 1.23619e-04
+rel. error K+0.5*M : 7.17768e-04
+Solving Dirichlet problem:
+  Residual: 9.71893e-02	 Iterations: 0  Residual: 4.03626e-02	 Iterations: 1  Residual: 1.19969e-02	 Iterations: 2  Residual: 5.29030e-03	 Iterations: 3  Residual: 2.51883e-03	 Iterations: 4  Residual: 1.49219e-03	 Iterations: 5  Residual: 9.60260e-04	 Iterations: 6  Residual: 5.84387e-04	 Iterations: 7  Residual: 4.17885e-04	 Iterations: 8  Residual: 2.38966e-04	 Iterations: 9  Residual: 1.25797e-04	 Iterations: 10  Residual: 7.37530e-05	 Iterations: 11  Residual: 3.33105e-05	 Iterations: 12  Residual: 1.33358e-05	 Iterations: 13  Residual: 6.12155e-06	 Iterations: 14  Residual: 2.97203e-06	 Iterations: 15  Residual: 1.55943e-06	 Iterations: 16  Residual: 9.56335e-07	 Iterations: 17  Residual: 5.76156e-07	 Iterations: 18  Residual: 4.10959e-07	 Iterations: 19  Residual: 2.98875e-07	 Iterations: 20  Residual: 1.59051e-07	 Iterations: 21  Residual: 9.25949e-08	 Iterations: 22  Residual: 4.58448e-08	 Iterations: 23  Residual: 2.25141e-08	 Iterations: 24  Residual: 1.13920e-08	 Iterations: 25  Residual: 6.29617e-09	 Iterations: 26  Residual: 2.85092e-09	 Iterations: 27  Residual: 1.06205e-09	 Iterations: 28  Residual: 5.81039e-10	 Iterations: 29  Residual: 3.67487e-10	 Iterations: 30  Residual: 1.72847e-10	 Iterations: 31  Residual: 8.51906e-11	 Iterations: 32  Residual: 4.74215e-11	 Iterations: 33  Residual: 2.91879e-11	 Iterations: 34  Residual: 1.81867e-11	 Iterations: 35  Residual: 1.13646e-11	 Iterations: 36  Residual: 6.22024e-12	 Iterations: 37  Residual: 2.78780e-12	 Iterations: 38  Residual: 1.05229e-12	 Iterations: 39  Residual: 3.91493e-13	 Iterations: 40
+max. rel. error : 2.62566e-04           okay
+
+Testing: ll exterior Hmatrix Green mixed
+====================================
+
+rel. error V       : 9.65671e-05
+rel. error K+0.5*M : 6.68396e-04
+Solving Dirichlet problem:
+  Residual: 9.71896e-02	 Iterations: 0  Residual: 4.03633e-02	 Iterations: 1  Residual: 1.19973e-02	 Iterations: 2  Residual: 5.29174e-03	 Iterations: 3  Residual: 2.51890e-03	 Iterations: 4  Residual: 1.49193e-03	 Iterations: 5  Residual: 9.60186e-04	 Iterations: 6  Residual: 5.82498e-04	 Iterations: 7  Residual: 3.93081e-04	 Iterations: 8  Residual: 2.38283e-04	 Iterations: 9  Residual: 1.31744e-04	 Iterations: 10  Residual: 7.45190e-05	 Iterations: 11  Residual: 3.33247e-05	 Iterations: 12  Residual: 1.34306e-05	 Iterations: 13  Residual: 6.18479e-06	 Iterations: 14  Residual: 2.98293e-06	 Iterations: 15  Residual: 1.51990e-06	 Iterations: 16  Residual: 9.43202e-07	 Iterations: 17  Residual: 5.78989e-07	 Iterations: 18  Residual: 4.12023e-07	 Iterations: 19  Residual: 2.99126e-07	 Iterations: 20  Residual: 1.57422e-07	 Iterations: 21  Residual: 8.73224e-08	 Iterations: 22  Residual: 4.39197e-08	 Iterations: 23  Residual: 2.24372e-08	 Iterations: 24  Residual: 1.13927e-08	 Iterations: 25  Residual: 6.29655e-09	 Iterations: 26  Residual: 2.85137e-09	 Iterations: 27  Residual: 1.06194e-09	 Iterations: 28  Residual: 5.77959e-10	 Iterations: 29  Residual: 3.60965e-10	 Iterations: 30  Residual: 1.71018e-10	 Iterations: 31  Residual: 8.04553e-11	 Iterations: 32  Residual: 4.49019e-11	 Iterations: 33  Residual: 2.84158e-11	 Iterations: 34  Residual: 1.81463e-11	 Iterations: 35  Residual: 1.12449e-11	 Iterations: 36  Residual: 5.87124e-12	 Iterations: 37  Residual: 2.68916e-12	 Iterations: 38  Residual: 1.04551e-12	 Iterations: 39  Residual: 3.91382e-13	 Iterations: 40
+max. rel. error : 2.60196e-04           okay
+
+Testing: ll exterior Hmatrix Greenhybrid row
+====================================
+
+rel. error V       : 6.19308e-05
+rel. error K+0.5*M : 3.93652e-05
+Solving Dirichlet problem:
+  Residual: 9.71959e-02	 Iterations: 0  Residual: 4.03649e-02	 Iterations: 1  Residual: 1.19982e-02	 Iterations: 2  Residual: 5.29254e-03	 Iterations: 3  Residual: 2.51874e-03	 Iterations: 4  Residual: 1.49194e-03	 Iterations: 5  Residual: 9.59997e-04	 Iterations: 6  Residual: 5.79062e-04	 Iterations: 7  Residual: 3.06711e-04	 Iterations: 8  Residual: 2.15130e-04	 Iterations: 9  Residual: 1.07372e-04	 Iterations: 10  Residual: 7.07837e-05	 Iterations: 11  Residual: 3.33043e-05	 Iterations: 12  Residual: 1.35212e-05	 Iterations: 13  Residual: 6.25461e-06	 Iterations: 14  Residual: 2.99164e-06	 Iterations: 15  Residual: 1.39381e-06	 Iterations: 16  Residual: 7.43706e-07	 Iterations: 17  Residual: 4.84739e-07	 Iterations: 18  Residual: 3.92770e-07	 Iterations: 19  Residual: 2.96717e-07	 Iterations: 20  Residual: 1.56335e-07	 Iterations: 21  Residual: 7.93648e-08	 Iterations: 22  Residual: 3.46387e-08	 Iterations: 23  Residual: 2.14112e-08	 Iterations: 24  Residual: 1.13235e-08	 Iterations: 25  Residual: 6.25998e-09	 Iterations: 26  Residual: 2.83695e-09	 Iterations: 27  Residual: 1.05507e-09	 Iterations: 28  Residual: 5.58394e-10	 Iterations: 29  Residual: 2.85736e-10	 Iterations: 30  Residual: 1.66030e-10	 Iterations: 31  Residual: 8.02020e-11	 Iterations: 32  Residual: 4.50120e-11	 Iterations: 33  Residual: 2.85727e-11	 Iterations: 34  Residual: 1.81626e-11	 Iterations: 35  Residual: 1.12374e-11	 Iterations: 36  Residual: 5.91939e-12	 Iterations: 37  Residual: 2.71891e-12	 Iterations: 38  Residual: 1.04914e-12	 Iterations: 39  Residual: 3.91221e-13	 Iterations: 40
+max. rel. error : 2.57671e-04           okay
+
+Testing: ll exterior Hmatrix Greenhybrid column
+====================================
+
+rel. error V       : 6.19429e-05
+rel. error K+0.5*M : 8.12904e-05
+Solving Dirichlet problem:
+  Residual: 9.71950e-02	 Iterations: 0  Residual: 4.03650e-02	 Iterations: 1  Residual: 1.19983e-02	 Iterations: 2  Residual: 5.29269e-03	 Iterations: 3  Residual: 2.51889e-03	 Iterations: 4  Residual: 1.49205e-03	 Iterations: 5  Residual: 9.60100e-04	 Iterations: 6  Residual: 5.79160e-04	 Iterations: 7  Residual: 3.09047e-04	 Iterations: 8  Residual: 2.18103e-04	 Iterations: 9  Residual: 1.11732e-04	 Iterations: 10  Residual: 7.19954e-05	 Iterations: 11  Residual: 3.33151e-05	 Iterations: 12  Residual: 1.35125e-05	 Iterations: 13  Residual: 6.24700e-06	 Iterations: 14  Residual: 2.98995e-06	 Iterations: 15  Residual: 1.39485e-06	 Iterations: 16  Residual: 7.53108e-07	 Iterations: 17  Residual: 5.12871e-07	 Iterations: 18  Residual: 4.06417e-07	 Iterations: 19  Residual: 2.98712e-07	 Iterations: 20  Residual: 1.56437e-07	 Iterations: 21  Residual: 7.95895e-08	 Iterations: 22  Residual: 3.51250e-08	 Iterations: 23  Residual: 2.15708e-08	 Iterations: 24  Residual: 1.13626e-08	 Iterations: 25  Residual: 6.27921e-09	 Iterations: 26  Residual: 2.84218e-09	 Iterations: 27  Residual: 1.05625e-09	 Iterations: 28  Residual: 5.58278e-10	 Iterations: 29  Residual: 2.80164e-10	 Iterations: 30  Residual: 1.65332e-10	 Iterations: 31  Residual: 8.02880e-11	 Iterations: 32  Residual: 4.50887e-11	 Iterations: 33  Residual: 2.86012e-11	 Iterations: 34  Residual: 1.81599e-11	 Iterations: 35  Residual: 1.12396e-11	 Iterations: 36  Residual: 5.93722e-12	 Iterations: 37  Residual: 2.72513e-12	 Iterations: 38  Residual: 1.04937e-12	 Iterations: 39  Residual: 3.91263e-13	 Iterations: 40
+max. rel. error : 2.56989e-04           okay
+
+Testing: ll exterior Hmatrix Greenhybrid mixed
+====================================
+
+rel. error V       : 8.37946e-05
+rel. error K+0.5*M : 9.95618e-05
+Solving Dirichlet problem:
+  Residual: 9.71959e-02	 Iterations: 0  Residual: 4.03648e-02	 Iterations: 1  Residual: 1.19981e-02	 Iterations: 2  Residual: 5.29262e-03	 Iterations: 3  Residual: 2.51878e-03	 Iterations: 4  Residual: 1.49196e-03	 Iterations: 5  Residual: 9.60034e-04	 Iterations: 6  Residual: 5.79205e-04	 Iterations: 7  Residual: 3.12001e-04	 Iterations: 8  Residual: 2.20401e-04	 Iterations: 9  Residual: 1.14400e-04	 Iterations: 10  Residual: 7.25868e-05	 Iterations: 11  Residual: 3.33160e-05	 Iterations: 12  Residual: 1.34914e-05	 Iterations: 13  Residual: 6.23182e-06	 Iterations: 14  Residual: 2.98427e-06	 Iterations: 15  Residual: 1.38992e-06	 Iterations: 16  Residual: 7.41624e-07	 Iterations: 17  Residual: 4.79863e-07	 Iterations: 18  Residual: 3.85794e-07	 Iterations: 19  Residual: 2.95088e-07	 Iterations: 20  Residual: 1.56391e-07	 Iterations: 21  Residual: 8.00962e-08	 Iterations: 22  Residual: 3.62843e-08	 Iterations: 23  Residual: 2.17677e-08	 Iterations: 24  Residual: 1.13343e-08	 Iterations: 25  Residual: 6.26375e-09	 Iterations: 26  Residual: 2.83862e-09	 Iterations: 27  Residual: 1.05506e-09	 Iterations: 28  Residual: 5.57704e-10	 Iterations: 29  Residual: 2.82919e-10	 Iterations: 30  Residual: 1.65537e-10	 Iterations: 31  Residual: 7.98140e-11	 Iterations: 32  Residual: 4.47330e-11	 Iterations: 33  Residual: 2.84474e-11	 Iterations: 34  Residual: 1.81592e-11	 Iterations: 35  Residual: 1.12210e-11	 Iterations: 36  Residual: 5.84321e-12	 Iterations: 37  Residual: 2.68966e-12	 Iterations: 38  Residual: 1.04689e-12	 Iterations: 39  Residual: 3.90983e-13	 Iterations: 40
+max. rel. error : 2.57274e-04           okay
+
+Testing: ll exterior Hmatrix ACA full pivoting
+====================================
+
+rel. error V       : 2.47897e-04
+rel. error K+0.5*M : 2.44978e-04
+Solving Dirichlet problem:
+  Residual: 9.71936e-02	 Iterations: 0  Residual: 4.03631e-02	 Iterations: 1  Residual: 1.19966e-02	 Iterations: 2  Residual: 5.29178e-03	 Iterations: 3  Residual: 2.51833e-03	 Iterations: 4  Residual: 1.49166e-03	 Iterations: 5  Residual: 9.59832e-04	 Iterations: 6  Residual: 5.78983e-04	 Iterations: 7  Residual: 3.08129e-04	 Iterations: 8  Residual: 2.17102e-04	 Iterations: 9  Residual: 1.10455e-04	 Iterations: 10  Residual: 7.16979e-05	 Iterations: 11  Residual: 3.33112e-05	 Iterations: 12  Residual: 1.35767e-05	 Iterations: 13  Residual: 6.28262e-06	 Iterations: 14  Residual: 2.99758e-06	 Iterations: 15  Residual: 1.39977e-06	 Iterations: 16  Residual: 7.54501e-07	 Iterations: 17  Residual: 5.11171e-07	 Iterations: 18  Residual: 4.06633e-07	 Iterations: 19  Residual: 2.99059e-07	 Iterations: 20  Residual: 1.56445e-07	 Iterations: 21  Residual: 7.95479e-08	 Iterations: 22  Residual: 3.51214e-08	 Iterations: 23  Residual: 2.15702e-08	 Iterations: 24  Residual: 1.13678e-08	 Iterations: 25  Residual: 6.28233e-09	 Iterations: 26  Residual: 2.84410e-09	 Iterations: 27  Residual: 1.05733e-09	 Iterations: 28  Residual: 5.59220e-10	 Iterations: 29  Residual: 2.80183e-10	 Iterations: 30  Residual: 1.65661e-10	 Iterations: 31  Residual: 8.10302e-11	 Iterations: 32  Residual: 4.55876e-11	 Iterations: 33  Residual: 2.88401e-11	 Iterations: 34  Residual: 1.82136e-11	 Iterations: 35  Residual: 1.12866e-11	 Iterations: 36  Residual: 6.03996e-12	 Iterations: 37  Residual: 2.75721e-12	 Iterations: 38  Residual: 1.05149e-12	 Iterations: 39  Residual: 3.91541e-13	 Iterations: 40
+max. rel. error : 2.58655e-04           okay
+
+Testing: ll exterior Hmatrix ACA partial pivoting
+====================================
+
+rel. error V       : 1.50336e-04
+rel. error K+0.5*M : 2.45022e-04
+Solving Dirichlet problem:
+  Residual: 9.71939e-02	 Iterations: 0  Residual: 4.03619e-02	 Iterations: 1  Residual: 1.19975e-02	 Iterations: 2  Residual: 5.29277e-03	 Iterations: 3  Residual: 2.52010e-03	 Iterations: 4  Residual: 1.49321e-03	 Iterations: 5  Residual: 9.60969e-04	 Iterations: 6  Residual: 5.79856e-04	 Iterations: 7  Residual: 3.17836e-04	 Iterations: 8  Residual: 2.25159e-04	 Iterations: 9  Residual: 1.18891e-04	 Iterations: 10  Residual: 7.31565e-05	 Iterations: 11  Residual: 3.33158e-05	 Iterations: 12  Residual: 1.35147e-05	 Iterations: 13  Residual: 6.24565e-06	 Iterations: 14  Residual: 2.98896e-06	 Iterations: 15  Residual: 1.40699e-06	 Iterations: 16  Residual: 8.01219e-07	 Iterations: 17  Residual: 5.59436e-07	 Iterations: 18  Residual: 4.12111e-07	 Iterations: 19  Residual: 2.99477e-07	 Iterations: 20  Residual: 1.56398e-07	 Iterations: 21  Residual: 7.97219e-08	 Iterations: 22  Residual: 3.56201e-08	 Iterations: 23  Residual: 2.15995e-08	 Iterations: 24  Residual: 1.12835e-08	 Iterations: 25  Residual: 6.24120e-09	 Iterations: 26  Residual: 2.83288e-09	 Iterations: 27  Residual: 1.05324e-09	 Iterations: 28  Residual: 5.57024e-10	 Iterations: 29  Residual: 2.77502e-10	 Iterations: 30  Residual: 1.65075e-10	 Iterations: 31  Residual: 8.07849e-11	 Iterations: 32  Residual: 4.54475e-11	 Iterations: 33  Residual: 2.88194e-11	 Iterations: 34  Residual: 1.82187e-11	 Iterations: 35  Residual: 1.12602e-11	 Iterations: 36  Residual: 5.99439e-12	 Iterations: 37  Residual: 2.74667e-12	 Iterations: 38  Residual: 1.04959e-12	 Iterations: 39  Residual: 3.90739e-13	 Iterations: 40
+max. rel. error : 2.59530e-04           okay
+
+Testing: ll exterior Hmatrix HCA2
+====================================
+
+rel. error V       : 1.40620e-04
+rel. error K+0.5*M : 2.44419e-04
+Solving Dirichlet problem:
+  Residual: 9.71905e-02	 Iterations: 0  Residual: 4.03624e-02	 Iterations: 1  Residual: 1.19973e-02	 Iterations: 2  Residual: 5.29214e-03	 Iterations: 3  Residual: 2.52041e-03	 Iterations: 4  Residual: 1.49353e-03	 Iterations: 5  Residual: 9.61455e-04	 Iterations: 6  Residual: 5.88475e-04	 Iterations: 7  Residual: 4.42354e-04	 Iterations: 8  Residual: 2.40215e-04	 Iterations: 9  Residual: 1.32122e-04	 Iterations: 10  Residual: 7.45219e-05	 Iterations: 11  Residual: 3.33444e-05	 Iterations: 12  Residual: 1.37424e-05	 Iterations: 13  Residual: 6.36628e-06	 Iterations: 14  Residual: 3.03593e-06	 Iterations: 15  Residual: 1.54590e-06	 Iterations: 16  Residual: 9.55411e-07	 Iterations: 17  Residual: 5.88906e-07	 Iterations: 18  Residual: 4.15096e-07	 Iterations: 19  Residual: 3.01466e-07	 Iterations: 20  Residual: 1.62284e-07	 Iterations: 21  Residual: 9.92800e-08	 Iterations: 22  Residual: 4.72835e-08	 Iterations: 23  Residual: 2.25689e-08	 Iterations: 24  Residual: 1.13895e-08	 Iterations: 25  Residual: 6.28572e-09	 Iterations: 26  Residual: 2.84455e-09	 Iterations: 27  Residual: 1.06548e-09	 Iterations: 28  Residual: 6.22590e-10	 Iterations: 29  Residual: 4.07800e-10	 Iterations: 30  Residual: 1.73565e-10	 Iterations: 31  Residual: 8.33832e-11	 Iterations: 32  Residual: 4.67211e-11	 Iterations: 33  Residual: 2.91817e-11	 Iterations: 34  Residual: 1.82247e-11	 Iterations: 35  Residual: 1.12929e-11	 Iterations: 36  Residual: 6.12131e-12	 Iterations: 37  Residual: 2.77613e-12	 Iterations: 38  Residual: 1.05151e-12	 Iterations: 39  Residual: 3.91305e-13	 Iterations: 40
+max. rel. error : 2.62660e-04           okay
+
+Testing: ll exterior H2matrix Interpolation
+====================================
+
+rel. error V       : 6.03127e-06
+rel. error K-0.5*M : 3.07493e-05
+Solving Dirichlet problem:
+  Residual: 9.71956e-02	 Iterations: 0  Residual: 4.03650e-02	 Iterations: 1  Residual: 1.19982e-02	 Iterations: 2  Residual: 5.29259e-03	 Iterations: 3  Residual: 2.51888e-03	 Iterations: 4  Residual: 1.49208e-03	 Iterations: 5  Residual: 9.60103e-04	 Iterations: 6  Residual: 5.79147e-04	 Iterations: 7  Residual: 3.08976e-04	 Iterations: 8  Residual: 2.18533e-04	 Iterations: 9  Residual: 1.12405e-04	 Iterations: 10  Residual: 7.20924e-05	 Iterations: 11  Residual: 3.33146e-05	 Iterations: 12  Residual: 1.35061e-05	 Iterations: 13  Residual: 6.24496e-06	 Iterations: 14  Residual: 2.98938e-06	 Iterations: 15  Residual: 1.39646e-06	 Iterations: 16  Residual: 7.61319e-07	 Iterations: 17  Residual: 5.27291e-07	 Iterations: 18  Residual: 4.09013e-07	 Iterations: 19  Residual: 2.98980e-07	 Iterations: 20  Residual: 1.56374e-07	 Iterations: 21  Residual: 7.93228e-08	 Iterations: 22  Residual: 3.45887e-08	 Iterations: 23  Residual: 2.14339e-08	 Iterations: 24  Residual: 1.13615e-08	 Iterations: 25  Residual: 6.27984e-09	 Iterations: 26  Residual: 2.84243e-09	 Iterations: 27  Residual: 1.05632e-09	 Iterations: 28  Residual: 5.58457e-10	 Iterations: 29  Residual: 2.81852e-10	 Iterations: 30  Residual: 1.65624e-10	 Iterations: 31  Residual: 8.03713e-11	 Iterations: 32  Residual: 4.51428e-11	 Iterations: 33  Residual: 2.86229e-11	 Iterations: 34  Residual: 1.81651e-11	 Iterations: 35  Residual: 1.12451e-11	 Iterations: 36  Residual: 5.94552e-12	 Iterations: 37  Residual: 2.72708e-12	 Iterations: 38  Residual: 1.04935e-12	 Iterations: 39  Residual: 3.91229e-13	 Iterations: 40
+max. rel. error : 2.57977e-04           okay
+
+Testing: ll exterior H2matrix Greenhybrid
+====================================
+
+rel. error V       : 6.22588e-05
+rel. error K-0.5*M : 8.67587e-05
+Solving Dirichlet problem:
+  Residual: 9.71952e-02	 Iterations: 0  Residual: 4.03651e-02	 Iterations: 1  Residual: 1.19982e-02	 Iterations: 2  Residual: 5.29258e-03	 Iterations: 3  Residual: 2.51877e-03	 Iterations: 4  Residual: 1.49192e-03	 Iterations: 5  Residual: 9.59992e-04	 Iterations: 6  Residual: 5.79133e-04	 Iterations: 7  Residual: 3.10506e-04	 Iterations: 8  Residual: 2.20122e-04	 Iterations: 9  Residual: 1.14137e-04	 Iterations: 10  Residual: 7.24054e-05	 Iterations: 11  Residual: 3.33132e-05	 Iterations: 12  Residual: 1.34982e-05	 Iterations: 13  Residual: 6.23854e-06	 Iterations: 14  Residual: 2.98824e-06	 Iterations: 15  Residual: 1.39753e-06	 Iterations: 16  Residual: 7.68470e-07	 Iterations: 17  Residual: 5.36857e-07	 Iterations: 18  Residual: 4.09898e-07	 Iterations: 19  Residual: 2.99051e-07	 Iterations: 20  Residual: 1.56485e-07	 Iterations: 21  Residual: 7.98440e-08	 Iterations: 22  Residual: 3.57091e-08	 Iterations: 23  Residual: 2.16668e-08	 Iterations: 24  Residual: 1.13281e-08	 Iterations: 25  Residual: 6.25986e-09	 Iterations: 26  Residual: 2.83675e-09	 Iterations: 27  Residual: 1.05502e-09	 Iterations: 28  Residual: 5.57692e-10	 Iterations: 29  Residual: 2.77830e-10	 Iterations: 30  Residual: 1.64990e-10	 Iterations: 31  Residual: 8.01296e-11	 Iterations: 32  Residual: 4.49763e-11	 Iterations: 33  Residual: 2.85619e-11	 Iterations: 34  Residual: 1.81591e-11	 Iterations: 35  Residual: 1.12333e-11	 Iterations: 36  Residual: 5.91802e-12	 Iterations: 37  Residual: 2.71986e-12	 Iterations: 38  Residual: 1.04903e-12	 Iterations: 39  Residual: 3.91143e-13	 Iterations: 40
+max. rel. error : 2.56630e-04           okay
+
+Testing: ll exterior H2matrix Greenhybrid ortho
+====================================
+
+rel. error V       : 9.62469e-05
+rel. error K-0.5*M : 1.24647e-04
+Solving Dirichlet problem:
+  Residual: 9.71963e-02	 Iterations: 0  Residual: 4.03648e-02	 Iterations: 1  Residual: 1.19981e-02	 Iterations: 2  Residual: 5.29258e-03	 Iterations: 3  Residual: 2.51876e-03	 Iterations: 4  Residual: 1.49192e-03	 Iterations: 5  Residual: 9.60000e-04	 Iterations: 6  Residual: 5.79247e-04	 Iterations: 7  Residual: 3.14229e-04	 Iterations: 8  Residual: 2.22309e-04	 Iterations: 9  Residual: 1.16540e-04	 Iterations: 10  Residual: 7.29081e-05	 Iterations: 11  Residual: 3.33189e-05	 Iterations: 12  Residual: 1.35247e-05	 Iterations: 13  Residual: 6.25249e-06	 Iterations: 14  Residual: 2.99014e-06	 Iterations: 15  Residual: 1.39346e-06	 Iterations: 16  Residual: 7.45626e-07	 Iterations: 17  Residual: 4.91751e-07	 Iterations: 18  Residual: 3.98383e-07	 Iterations: 19  Residual: 2.97684e-07	 Iterations: 20  Residual: 1.56470e-07	 Iterations: 21  Residual: 8.01056e-08	 Iterations: 22  Residual: 3.63088e-08	 Iterations: 23  Residual: 2.17720e-08	 Iterations: 24  Residual: 1.13369e-08	 Iterations: 25  Residual: 6.26629e-09	 Iterations: 26  Residual: 2.84002e-09	 Iterations: 27  Residual: 1.05566e-09	 Iterations: 28  Residual: 5.58143e-10	 Iterations: 29  Residual: 2.83078e-10	 Iterations: 30  Residual: 1.65690e-10	 Iterations: 31  Residual: 8.03821e-11	 Iterations: 32  Residual: 4.51449e-11	 Iterations: 33  Residual: 2.86221e-11	 Iterations: 34  Residual: 1.81676e-11	 Iterations: 35  Residual: 1.12447e-11	 Iterations: 36  Residual: 5.94288e-12	 Iterations: 37  Residual: 2.72609e-12	 Iterations: 38  Residual: 1.04956e-12	 Iterations: 39  Residual: 3.91169e-13	 Iterations: 40
+max. rel. error : 2.59312e-04           okay
+
+----------------------------------------
+  0 matrices and
+  0 vectors still active
+  0 errors found

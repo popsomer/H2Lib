@@ -1,0 +1,1 @@
+cat ./test_amatrix ./test_ddcluster ./test_eigen ./test_h2compression ./test_h2matrix ./test_helmholtzbem3d ./test_helmholtzbem3d_ocl ./test_hmatrix ./test_krylov ./test_laplacebem2d ./test_laplacebem3d ./test_laplacebem3d_ocl ./test_tet3d ./test_tri2d | testResults
