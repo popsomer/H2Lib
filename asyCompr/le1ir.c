@@ -105,11 +105,13 @@ solve_gmres_bem3d(matrixtype type, void *A, pavector b, pavector x,
 	fflush(stdout);
       }
       if (norm <= accuracy) {
+        printf("norm: %g <= %g. kk=%i, i= %i, j= %i \n", norm, accuracy, kk,i,j);
 	finish_gmres(addevalA, A, b, x, rhat, q, &kk, qr, tau);
 	break;
       }
     }
     if (norm <= accuracy) {
+      printf("Reached accuracy: %g <= %g. kk=%i, i= %i \n", norm, accuracy, kk,i);
       break;
     }
     else {

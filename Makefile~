@@ -296,7 +296,7 @@ cleangcov:
 #.PHONY: asyCompr
 
 #CPA = gcc -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -c
-CPA = -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -Wint-to-pointer-cast
+CPA = -Wall -O3 -march=native -funroll-loops -funswitch-loops -DUSE_COMPLEX -DUSE_BLAS -DUSE_CAIRO -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12   -DHARITH_RKMATRIX_QUICK_EXIT -DHARITH_AMATRIX_QUICK_EXIT -I Library -Wno-int-to-pointer-cast
 LIA = -lh2 -lm  -llapack -lblas -lgfortran -lcairo -lm
 
 asyCompr:

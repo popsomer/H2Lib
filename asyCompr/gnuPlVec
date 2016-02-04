@@ -1,0 +1,6 @@
+set title "Row of A times full solution vector"
+set xlabel "j"
+set ylabel "|A_{i,j}x_j|"
+set term postscript eps enhanced color
+set output "gpv.eps"
+plot "gpv.dat"

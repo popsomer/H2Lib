@@ -61,14 +61,14 @@ main(int argc, char **argv)
 {
   pmacrosurface3d mg;
   psurface3d gr;
-  uint      n, q, clf;
-  real      eta;
-  field     kvec[3];
+  uint      n, q, clf, j, i, sys;
+  real      eta; //, elmt, sum;
+  field     kvec[3], elmt, sum, norb, norerr;
   
   struct _eval_A eval;
   struct _eval_A evalf;
   struct _eval_A evalfC;
-  pavector  x, b, xf, xfc;
+  pavector  x, b, xf, xfc, tst;
   helmholtz_data hdata;
   real      errorV, errorKM, error_solve, eps_solve, errSol;
   uint      steps;
@@ -181,6 +181,59 @@ main(int argc, char **argv)
 
   xf = new_avector(Vfull->cols);
   solve_gmres_bem3d(AMATRIX, (void *) &evalf, b, xf, eps_solve, steps);
+
+  printf("apsoidjf\n");
+
+  FILE *gnuplotVec = fopen("gpv.dat", "w");
+//  fprintf(gnuplot, "plot '-'\n");
+  printf("faosidf\n");
+  i = 1;
+  sum = 0;
+  elmt = getentry_amatrix(Vfull,i,0)*getentry_avector(xf,0);
+  printf("oaisufhddf\n");
+  for (j = 0; j < Vfull->cols; j++) {
+     elmt = getentry_amatrix(Vfull,j,i)*getentry_avector(xf,j);
+//     elmt = getentry_amatrix(Vfull,i,j)*getentry_avector(xf,j);
+     sum += elmt;
+//     fprintf(gnuplotVec, "%i %g\n", j, elmt);
+     fprintf(gnuplotVec, "%i %g\n", j, creal(elmt));
+//     fprintf(gnuplotVec, "%i %g\n", j, abs(elmt));
+  }
+  printf("aopsufhd\n");
+//  fprintf(gnuplotVec, "e\n");
+//  fflush(gnuplotVec);
+  fclose(gnuplotVec);
+  sys = system("gnuplot asyCompr/gnuPlVec");
+  printf("a0soijfdf\n");
+  elmt = getentry_avector(b,i);
+//  printf("i= %i, sum = %g, b[i] = %g, showing A[i,:]x[:]...\n", i, sum, elmt);
+  printf("i= %i, sum = %g+i%g, b[i] = %g+i%g, showing A[i,:]x[:]...\n", i, creal(sum), cimag(sum), creal(elmt), cimag(elmt));
+//  sys += system("evince gpv.eps");
+  printf("pouiahdf\n");
+
+  sum = 0.0;
+  norb = 0.0;
+  norerr = 0.0;
+  for(i=0; i < Vfull->rows; i++) {
+     elmt = -getentry_avector(b,i);
+     norb += pow(cabs(elmt),2.0);
+     for (j = 0; j < Vfull->cols; j++) {
+	elmt += getentry_amatrix(Vfull,j,i)*getentry_avector(xf,j);
+//	elmt += getentry_amatrix(Vfull,i,j)*getentry_avector(xf,j);
+     }
+     sum += pow(cabs(elmt),2.0);
+//     printf("%g+i%g = elmt, norb= %g+i%g\n", creal(elmt), cimag(elmt), creal(norb), cimag(norb) );
+  }
+  printf("rows=%i, cols=%i.\n", Vfull->rows, Vfull->cols);
+  printf("norb=%g, norerr=%g, sys=%i, norerr=%g.\n", sqrt(cabs(norb)), sqrt(cabs(sum)), sys, sqrt(cabs(norerr)));
+
+//  tst = b;
+//  tst = 0;
+  tst = new_avector(KMfull->rows);
+  copy_avector(b,tst);
+  addeval_amatrix_avector(-1.0, Vfull, xf, tst);
+  printf("norb with norm2=%g, norerr with addeval=%g \n.", norm2_avector(b), norm2_avector(tst) );
+
 
   error_solve = max_rel_outer_error(bem_slp, &hdata, x, rhs, basis_neumann);
   printf("max. rel. error Hmat: %.5e \n", error_solve);

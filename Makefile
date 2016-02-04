@@ -310,6 +310,11 @@ asyCompr:
 #	$(CPA) asyCompr/tryCompr.c -o asyCompr/tryCompr.o
 #	gcc  -Wl,-L,.,-R,. asyCompr/tryCompr.o asyCompr/validation.o -o tryCompr $(LIA)
 
+
+speed:
+	@gcc $(CPA) -c asyCompr/validation.c -Wno-unused-function
+	@gcc -Wl,-L,.,-R,. $(CPA) asyCompr/speedH2lib.c $(LIA)
+
 aOld:
 #	$(CPA) asyCompr/le1ir.c -o asyCompr/le1ir.o
 #	gcc  -Wl,-L,.,-R,. asyCompr/le1ir.o -o le1ir $(LIA)

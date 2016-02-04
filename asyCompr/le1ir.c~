@@ -110,6 +110,7 @@ solve_gmres_bem3d(matrixtype type, void *A, pavector b, pavector x,
       }
     }
     if (norm <= accuracy) {
+      printf("Reached accuracy: %g <= %g. kk=%i, i= %i \n", norm, accuracy, kk,i);
       break;
     }
     else {
@@ -450,7 +451,8 @@ test_system(matrixtype mattype, const char *apprxtype,
 //    
 //  }
 //  printf("errSol = %.5e \n", norm2diff_amatrix(*x,*xf) ); //sqrt(errSol)
-  add_avector(-1.0,(void *) &x, (void *) &xf); // xf is overwritten by xf-1.0*x
+//  add_avector(-1.0,(void *) &x, (void *) &xf); // xf is overwritten by xf-1.0*x
+  add_avector(-1.0, x, xf); // xf is overwritten by xf-1.0*x
   printf("poiu\n");
   errSol = norm2_avector(xf);
   printf("oairufha\n");

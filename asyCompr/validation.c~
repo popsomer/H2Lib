@@ -2,12 +2,6 @@
 #include "krylov.h"
 #include "helmholtzbem3d.h"
 
-#ifdef USE_CAIRO
-#include <cairo.h>
-#endif
-
-static uint problems = 0;
-
 #define IS_IN_RANGE(a, b, c) (((a) <= (b)) && ((b) <= (c)))
 
 struct _eval_A {
@@ -67,10 +61,10 @@ solve_gmres_bem3d(matrixtype type, void *A, pavector b, pavector x,
 		  real accuracy, uint steps)
 {
   addeval_t addevalA;
-  pavector  rhat, q, tau;
+  pavector  rhat, q, tau;//, tst;
   pamatrix  qr;
   uint      i, j, n, kk, kmax;
-  real      norm;
+  real      norm; //, axmb, norb;
 
   addevalA = (addeval_t) addeval_A;
 
@@ -87,20 +81,33 @@ solve_gmres_bem3d(matrixtype type, void *A, pavector b, pavector x,
 
   init_gmres(addevalA, A, b, x, rhat, q, &kk, qr, tau);
 
+  tst = new_avector(n);//Ax-b iso rhat
+  norb = norm2_avector(b); 
+
   for (i = 0; i < steps; i += kmax) {
-    for (j = 0; j < kmax && i + j < steps; ++j) {
+    for (j = 0; (j < kmax) && (i + j < steps); ++j) {
+//    for (j = 0; j < kmax && i + j < steps; ++j) {
       step_gmres(addevalA, A, b, x, rhat, q, &kk, qr, tau);
       norm = residualnorm_gmres(rhat, kk);
+
+//      copy_avector(b,tst);
+//printf("bnor=%g, x=%g\n", norm2_avector(tst),norm2_avector(x) );
+//      addevalA(-1.0, A, x, tst);
+//printf("axb=%g, x= %g\n", norm2_avector(tst),norm2_avector(x) );
+      //addeval_amatrix_avector(-1.0, Vfull, xf, tst);
+//      axmb = norm2_avector(tst);
       if(false) {
 	printf("  Residual: %.5e\t Iterations: %u\r", norm, j + i);
 	fflush(stdout);
       }
       if (norm <= accuracy) {
+//        printf("norm: %g <= %g. kk=%i, i= %i, j= %i, |Ax-b|= %g, |b|=%g \n", norm, accuracy, kk,i,j, axmb,norb);
 	finish_gmres(addevalA, A, b, x, rhat, q, &kk, qr, tau);
 	break;
       }
     }
     if (norm <= accuracy) {
+//      printf("Reached accuracy: %g <= %g. kk=%i, i= %i, |Ax-b|= %g, |b|=%g \n", norm, accuracy, kk,i,axmb,norb);
       break;
     }
     else {
